@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(63, 168, 233, 0.992);">
+    <div class="container">
+        <div class="card" style="width: 18rem;" id="bodyItem">
+            <div class="card-header text-white bg-dark mb-3" id="header">WEATHER REPORT</div><br>
+            <input type="text" id="cityInput" placeholder="Enter the location"><br>
+            <button  class="btn btn-primary" onclick="getWeather()">Search</button><br>
+            <div class="card-body" >
+                <h2 class="city"></h2>
+               
+                <label for="image" id="imageItem"></label>
+                <p id="temperatureValue"></p>
+                <p for="wind" id="windValue"></p>
+                <p for="humidity" id="humidityValue"></p>
+                <p for="pressure" id="pressureValue"></p>
+                <p for="WEATHER" id="weatherValue"></p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
